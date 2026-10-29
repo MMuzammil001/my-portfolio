@@ -1349,3 +1349,158 @@ footer {
     font-size: 10px;
   }
 }
+
+/* Project Image Section */
+
+.projects-section {
+  background: white;
+}
+
+.project-card {
+  height: 100%;
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: white;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow);
+}
+
+.featured-project {
+  border-color: #bcd4fa;
+  box-shadow: 0 10px 35px rgba(18, 100, 232, 0.07);
+}
+
+/* Project Website Images */
+
+.project-image {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  background: #f1f5f9;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Developer Portfolio Icon */
+
+.project-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf5ff;
+  color: var(--primary);
+  border-radius: 12px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* Project Number */
+
+.project-number {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #c5ccd6;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Project Title */
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Project Description */
+
+.project-card p {
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Technology Tags */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 25px;
+}
+
+.project-tags span {
+  background: #f2f4f7;
+  color: #475467;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Project Link */
+
+.project-link,
+.project-card a {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-link i,
+.project-card a i {
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover i,
+.project-card a:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 576px) {
+  .project-card {
+    padding: 22px;
+  }
+
+  .project-image {
+    height: 180px;
+    margin-bottom: 22px;
+  }
+
+  .project-number {
+    top: 22px;
+    right: 22px;
+  }
+
+  .project-card h3 {
+    font-size: 19px;
+  }
+}
